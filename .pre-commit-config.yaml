@@ -33,14 +33,14 @@ repos:
     hooks:
       - id: flake8
         args: ["--ignore=E203,F811,W503"]
-  # - repo: local
-  #   hooks:
-  #     - id: pylint
-  #       name: pylint
-  #       entry: poetry run pylint
-  #       language: system
-  #       types: [python]
-  #       args:
-  #         [
-  #           "-rn", # Only display messages
-  #         ]
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: poetry run pylint
+        language: system
+        types: [python]
+        args:
+          [
+            "-rn", # Only display messages
+          ]
